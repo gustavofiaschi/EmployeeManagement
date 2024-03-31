@@ -98,10 +98,10 @@ namespace Backend.Domain.Services.Tests
                 var id = await sut.Create(employee);
 
                 // Act
-                var result = sut.GetEmployeesYearsOfService();
+                var result = sut.GetEmployeesYearsOfService(id);
 
                 // Assert
-                Assert.IsTrue(result.Any(x=>x.Item2 == 10));
+                Assert.AreEqual(10, result);
             }
         }
     }
