@@ -1,0 +1,72 @@
+﻿#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;    
+    background-color: silver;
+}
+
+.table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr:nth-child(even) {
+    background: #F2F2F2;
+}
+
+tr:nth-child(odd) {
+    background: #FFF;
+}
+
+.selectedTr {
+    background: cornflowerblue !important;
+}
+
+th, td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template: 1fr 1fr 1fr;    
+}
+
+.row {
+    display: flex;    
+    align-items: baseline;
+    gap: 1rem;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.labelField {
+    font-size: 0.8rem;
+}
+
+input {
+    width: 10rem;
+    height: 1rem;
+    margin-left: 1rem;
+}
+
+select {
+    width: 10rem;
+    height: 1.5rem;
+    margin: 1rem 1rem;
+}
+
+.button {
+    border: solid;
+    margin: 1rem 0;
+}
+
+.section {
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin-bottom: 1rem;    
+}
